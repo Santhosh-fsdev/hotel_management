@@ -22,7 +22,7 @@ $result = mysqli_query($connect,"SELECT * FROM registration WHERE id='$num'");
                  <h2>Registration Form </h2>
          
                  <hr class='my-4'>
-                 <h3> We are much privilaged to provide you the services here. Please fill up the details to enjoy our services.</h3>
+                 <h3> We are much privilaged to provide you the services here. Please find below your services. If there is any change contact us.</h3>
          
                  <br />
                  <div class='form-group'>
@@ -62,7 +62,7 @@ $result = mysqli_query($connect,"SELECT * FROM registration WHERE id='$num'");
                    </div>
                    <div class='form-group'>
                      <label for='address'>Address</label>
-                     <textarea class='form-control' id='address' rows='3' name='address'value='{$row['address']}' readonly></textarea>
+                     <input type='text' class='form-control' id='address'  name='address' value='{$row['address']}' readonly/>
                    </div>
                    <div class='form-group'>
                      <label for='nor'>Number of rooms</label>
@@ -83,8 +83,8 @@ $result = mysqli_query($connect,"SELECT * FROM registration WHERE id='$num'");
                      </select>
                    </div>
                    <div class='form-group'>
-                     <label for='spcl'>Special Requests</label>
-                     <textarea class='form-control' id='spcl' rows='3' name='spcl' value='{$row['spcl']}' readonly></textarea>
+                     <label for='address'>Address</label>
+                     <input type='text' class='form-control' id='address'  name='address' value='{$row['spcl']}' readonly/>
                    </div>
                    <div class='form-group'>
                      <label for='pass'>Password for Your Account</label>
@@ -92,9 +92,7 @@ $result = mysqli_query($connect,"SELECT * FROM registration WHERE id='$num'");
                    </div>
                </form>
                </div>
-             </div>
-             <div>
-                <h1>feel free to contact us on any time. Thank you
+               <h4>feel free to contact us on any time. Thank you</h4>
              </div>
          
          </body>
