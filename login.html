@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Login page</title>
+</head>
+<body style="background-image: url('./hotel.jpeg');background-repeat: no-repeat;background-position: center ;background-size:cover;width: 100%;height: auto;">
+
+<div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Taj Hotel</h1>
+            <p class="lead">Have a peaceful and wonderful here. We provide world class sophostication and customised service to all our customers.</p>
+            <p>Already registered, then Sign-in to view your profile.</p>
+            <hr class="my-4">
+            <form action="login.php" method="post">
+                <div class="form-group">
+                  <label for="id">Application ID</label>
+                  <input type="number" class="form-control" id="id" name='id'aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="pass">Password</label>
+                  <input type="password" class="form-control" id="pass" name="pass">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <hr class="my-4">
+              <p>Are you a new customer, then register to enjoy our services.</p>
+              <a class="btn btn-primary btn-lg" href="./register.html" role="button">Register</a>
+              <br />
+        </div>
+    </div>
+            
+</body>
+</html>
